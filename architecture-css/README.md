@@ -39,6 +39,21 @@ Styles spécifiques à nos composants UI. La plupart de notre design et de notre
 **Utilities** :
 Classes utilitaires de styles spécifique. Ce sont de véritable Helpers qui nous permettent d'appliquer des styles sur des éléments autre que des composants et de surcharger n'importe quel style existant. Pratique pour compléter les objets.
 
+C'est une proposition pas une obligation. On peu très bien l'adapter à ses besoins. Voici un exemple d'organisation que j'utilise et qui respecte le même principe :
+
+```
+- Settings : déclaration de variables
+- Base : styles génériques
+- Layout : structure de la page
+- Composants : un fichier par composant
+  - heading
+  - boutons
+  - menu
+  - ...
+- Thème : styles spécifiques à un theme ou une page
+- Helpers : ensemble de classe utilitaire
+```
+
 ## Conventions d'écritures, apportez de la clarté dans votre code
 
 Les conventions de nommage sont très importantes pour collaborer à plusieurs sur de gros projets. Plusieurs impacts :
