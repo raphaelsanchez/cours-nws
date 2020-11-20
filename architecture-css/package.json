@@ -1,0 +1,12 @@
+{
+  "name": "cours-architecture-css",
+  "version": "1.0.0",
+  "description": "Petit cours sur l'architecture CSS pour la NWS",
+  "main": "index.js",
+  "author": "Raphael Sanchez",
+  "license": "MIT",
+  "dependencies": {
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
