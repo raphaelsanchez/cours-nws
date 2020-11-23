@@ -104,7 +104,7 @@ Le but de cet exercice est de mettre en pratique les propos ci-dessus en réalis
 
 Vous vous inspirerez de l'architecture ITCSS. Aucune obligation d'y coller parfaitement, mais respecter l’ordre d’inclusion des styles (moins forte -> plus forte et générique -> explicite).
 
-Vous utiliserez une convention d'écriture. Vous pourrez choisir SMACSS, BEM ou autre... au quel cas, vous devez préciser, dans un commentaire d'ent^te
+Vous utiliserez une convention d'écriture. Vous pourrez choisir SMACSS, BEM ou autre... au quel cas, vous devez préciser, dans un commentaire d'entête
 
 ### Liste des composants attendus :
 
