@@ -157,3 +157,4 @@ ou, si vous n'êtes pas à l'aise avec Github,
  - Choix d'une convention d'écriture et son respect ( ... /4 )
  - Réalisation des composants ( ... /4 )
  - Qualité et clarté du code. Nommage explicite, organisation, commentaire explicatif, référence ( ... /4 )
+ - Professionnalisme : respect des consignes, autonomie, respect des délais ( ... /4 )
