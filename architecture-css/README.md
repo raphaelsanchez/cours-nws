@@ -100,7 +100,7 @@ Vous pouvez vous inspirer de [codeguide.com](https://codeguide.co/)
 
 ## Exercice
 
-Le but de cette exercice est de mettre en pratique les propos ci-dessus en réalisant un page HTML liée à un fichier CSS dans laquelle nous afficherons des compostant en adoptant une approche atomic. Il faudra également penser aux éléments de base (ex: Titre, text, lien, image, etc...)
+Le but de cet exercice est de mettre en pratique les propos ci-dessus en réalisant un page HTML liée à un fichier CSS dans laquelle nous afficherons des compostant en adoptant une approche atomic. Il faudra également penser aux éléments de base (ex: Titre, text, lien, image, etc...)
 
 Vous vous inspirerez de l'architecture ITCSS. Aucune obligation d'y coller parfaitement, mais respecter l’ordre d’inclusion des styles (moins forte -> plus forte et générique -> explicite).
 
@@ -139,6 +139,17 @@ Créer un bloc d'appel à action (CTA) pour s'inscrire à la newsletter. Celle-c
   - Text
   - Champ (type email)
   - Bouton de d'inscription
+
+### Condition de rendu
+
+Pour le rendu, vous avez deux possibilités :
+
+**Sur github** : Dans un depot que vous nommerez ainsi `exercice-architecture-css`
+et vous mettrez le lien sur Classroom.
+
+ou, si vous n'êtes pas à l'aise avec Github,
+
+**Sur classroom** : Dans un dossier zippé contenant votre code source.
 
 ### Barème de notation
 
