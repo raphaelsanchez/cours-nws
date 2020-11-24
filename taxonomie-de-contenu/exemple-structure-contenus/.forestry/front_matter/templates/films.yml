@@ -11,12 +11,18 @@ fields:
 - type: list
   name: genres
   label: genres
+- name: sortie
+  type: datetime
+  label: sortie
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
 - type: text
   name: realisateur
   label: realisateur
-- type: text
-  name: sortie
-  label: sortie
 - type: text
   name: duree
   label: duree
