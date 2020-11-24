@@ -26,3 +26,5 @@ fields:
 - type: text
   name: duree
   label: duree
+pages:
+- taxonomie-de-contenu/exemple-structure-contenus/content/films/hugo-quelle-galere.md
