@@ -114,10 +114,10 @@ Vous constaterez également que nous avons ajouté une nouvelle taxonomie "Genre
 
 Le but de l'exercice est de créer et structurer, à l'aide de dossiers et fichiers Markdown, différent types de contenus.
 
-  1. Créez votre dossier de projet "exemple-structure-contenus"
-  2. Vous constiturez un catalogue de fiche sur les jeux vidéos
-  3. Vous créerez un catalogue de personnage de jeux
-  4. Pour chaqu'un de ces types de contenus, vous ajouterez de meta ainsi qu'une ou plusieurs taxonomie.
+  1. Créez votre dossier de projet "catalogue-jeux-videos"
+  2. Vous constiturez un catalogue de fiches sur les jeux vidéos
+  3. Vous créerez un catalogue de personnages de jeux
+  4. Pour chaqu'un de ces types de contenus, vous ajouterez des meta ainsi qu'une ou plusieurs taxonomies pour les classer.
 
 
 ### Condition de rendu
