@@ -1,0 +1,22 @@
+---
+label: Films
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: list
+  name: genres
+  label: genres
+- type: text
+  name: realisateur
+  label: realisateur
+- type: text
+  name: sortie
+  label: sortie
+- type: text
+  name: duree
+  label: duree
