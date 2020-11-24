@@ -9,8 +9,9 @@
      {{ partial "header" (dict "Kind" .Kind "Template" "Single") }}
 
      <div style="margin:25px;">
-          <h1>{{.Title}}</h1>
           <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
+          <h1>{{.Title}}</h1>
+
           <div style="color:grey; font-size:16px;">{{if .Params.author}}Author: {{.Params.Author}}{{end}}
                {{ if .Params.cuisson }}
                <div style="color:grey; font-size:16px;"><strong>Cuisson :</strong> {{ .Params.cuisson }}</div>
@@ -21,6 +22,22 @@
 
                {{ if .Params.difficulte }}
                <div style="color:grey; font-size:16px;"><strong>Difficulté :</strong> {{ .Params.difficulte }}</div>
+               {{end}}
+
+               {{ if .Params.realisateur }}
+               <div style="color:grey; font-size:16px;"><strong>Réalisateur :</strong> {{ .Params.realisateur }}</div>
+               {{end}}
+
+               {{ if .Params.genres }}
+               <div style="color:grey; font-size:16px;"><strong>Genres:</strong> {{range .Params.genres}}<a href="{{ "/genres/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>
+               {{end}}
+
+               {{ if .Params.sortie }}
+               <div style="color:grey; font-size:16px;"><strong>Date de sortie :</strong> {{ .Params.sortie }}</div>
+               {{end}}
+
+               {{ if .Params.duree }}
+               <div style="color:grey; font-size:16px;"><strong>Durée :</strong> {{ .Params.duree }}</div>
                {{end}}
           </div>
           <div style="font-size:18px;">{{.Content}}</div>

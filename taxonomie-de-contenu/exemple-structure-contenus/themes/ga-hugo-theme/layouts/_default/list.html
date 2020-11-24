@@ -14,13 +14,26 @@
                     <a href="{{.URL}}">{{.Title}}</a>
                </div>
                <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
-               <div style="color:grey; font-size:16px;">{{ if .Params.tags }}<strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
-               <div style="color:grey; font-size:16px;">{{ if .Params.categories }}<strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
-               <div style="color:grey; font-size:16px;">{{ if .Params.moods }}<strong>Moods:</strong> {{range .Params.moods}}<a href="{{ "/moods/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}{{end}}</div>
-               {{ if .Params.difficulte }}
-               <div style="color:grey; font-size:16px;"><strong>Difficulté :</strong> {{ .Params.difficulte }}</div>
+
+               {{ if .Params.tags }}
+               <div style="color:grey; font-size:16px;"><strong>Tags:</strong> {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>
                {{end}}
+
+               {{ if .Params.categories }}
+               <div style="color:grey; font-size:16px;"><strong>Categories:</strong> {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>
+               {{end}}
+
+               {{ if .Params.genres }}
+               <div style="color:grey; font-size:16px;"><strong>genres:</strong> {{range .Params.genres}}<a href="{{ "/genres/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>
+               {{end}}
+
+               {{ if .Params.difficulte }}
+               <div style="color:grey; font-size:16px;"><strong>Difficulté :</strong> {{range .Params.difficulte}}<a href="{{ "/difficulte/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}</div>
+               {{end}}
+
+               {{/*
                <p style="font-size:18px;">{{.Summary}}</p>
+               */}}
           </div>
      {{ end }}
      {{ partial "footer" . }}
