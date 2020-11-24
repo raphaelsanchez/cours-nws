@@ -8,4 +8,4 @@ sortie = 2020-11-24T23:00:00Z
 title = "Hugo quelle galère"
 
 +++
-Ici mon contenu
+Ici mon contenu ajouté depuis [Forestry.io](https://app.forestry.io/)
