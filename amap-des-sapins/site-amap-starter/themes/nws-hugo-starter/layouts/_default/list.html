@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+  <header class="site-content__header">
+    <h1 class="header__title">{{ .Title }}</h1>
+    {{ if .Params.description }}
+      <p class="header__description">{{ .Params.description }}</p>
+    {{ end }}
+  </header>
+
+  {{ range .Paginator.Pages }}
+    {{ .Render "summary" }}
+  {{ end }}
+
+  {{ partial "pagination.html" . }}
+
+{{ end }}

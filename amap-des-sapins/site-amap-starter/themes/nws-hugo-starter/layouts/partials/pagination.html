@@ -1,0 +1,13 @@
+<nav class="paginator" role="navigation" aria-label="Pagination">
+
+  {{ if .Paginator.HasPrev }}
+    <a class="paginator__prev" href="{{ .Paginator.Prev.URL }}">Page précédente</a>
+  {{ end }}
+
+  <span class="paginator__number"><span class="screen-reader">Vous êtes sur la page : </span><strong>{{ .Paginator.PageNumber }}</strong> sur {{ .Paginator.TotalPages }}</span>
+
+  {{ if .Paginator.HasNext }}
+    <a class="paginator__next" href="{{ .Paginator.Next.URL }}">Page suivante</a>
+  {{ end }}
+
+</nav>

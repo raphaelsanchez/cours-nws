@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<section class="fullwidth">
+  <img src="https://placehold.it/1200x630">
+</section>
+
+<section class="blog">
+  <h2>Derniers articles</h2>
+
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" "blog") }}
+		{{ range first 2 $paginator.Pages }}
+			{{ .Render "summary" }}
+		{{ end }}
+</section>
+
+{{ end }}

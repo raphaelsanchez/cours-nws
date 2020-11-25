@@ -1,0 +1,13 @@
+# theme.toml template for Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name= "NWS Hugo Starter"
+license= "MIT"
+description= "A theme used for NWS Hugo courses"
+tags= ['minimal', 'starter']
+features= []
+min_version= "0.78.1"
+
+[author]
+  name= "Raphael Sanchez"
+  homepage= "https://raphaelsanchez.design"

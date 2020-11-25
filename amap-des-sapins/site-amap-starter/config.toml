@@ -1,3 +1,75 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+# baseURL = "http://example.org/"
+languageCode = "fr-FR"
+title = "AMAP de Sapins"
+theme = "nws-hugo-starter"
+assetDir = "static"
+
+# Longueur de l'extrait
+summarylength = 15
+
+# Nombre d'article par page
+paginate = 10
+
+# Site Params
+[params]
+  logo = "images/logo.png"
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "NWS Hugo Starter | AMAP Template by Raphael Sanchez"
+  author = "Raphael Sanchez"
+  authorUrl = "https://raphaelsanchez.design"
+  # Google Analitycs
+  googleAnalitycsID = ""
+
+# Footer Sitemap
+[params.contact]
+  title   = "AMAP de Sapins"
+  # Adresse
+  street = "3b route de Lyons-la-Forêt"
+  zipcode = "76000"
+  city = "Rouen"
+  # Contact
+  email = "contact@amapdessapins.fr"
+  phone = "02 03 04 05 06"
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "Home"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Blog"
+    url     = "blog"
+    weight  = 3
+
+# Footer Sitemap
+[params.sitemap]
+  title   = "Plan du site"
+  [[params.sitemap.link]]
+    name = "Accueil"
+    url  = "#"
+  [[params.sitemap.link]]
+    name = "About"
+    url  = "#"
+  [[params.sitemap.link]]
+    name = "Contact"
+    url  = "#"
+
+# Social Networks
+[params.social]
+  title   = "Social Media"
+  [[params.social.link]]
+    name = "Facebook"
+    url  = "#"
+  [[params.social.link]]
+    name = "Twitter"
+    url  = "#"
+  [[params.social.link]]
+    name = "Instagram"
+    url  = "#"

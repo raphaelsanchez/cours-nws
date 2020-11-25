@@ -1,0 +1,20 @@
+<header class="site-header" role="banner">
+
+  <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+
+  <nav role="navigation" aria-label="Navigation principal">
+    <ul class="nav">
+      {{$menu := (.Site.Menus.nav)}}
+      {{$len := (len $menu)}}
+
+      {{ range $index, $element := $menu }}
+
+        <li class="nav__item">
+          <a class="nav__link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+        </li>
+
+      {{ end }}
+
+    </ul>
+  </nav>
+</header>

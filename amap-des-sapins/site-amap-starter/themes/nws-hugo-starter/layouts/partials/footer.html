@@ -1,0 +1,46 @@
+<footer class="site-footer" role="contentinfo">
+  <h1 class="screen-reader">Pied de page</h1>
+
+  {{ with .Site.Params.contact }}
+  <section class="footer__contact">
+    <h2>{{ .title }}</h2>
+
+    <address>
+      {{ .street }}<br>
+      {{ .zipcode }} {{ .city }}
+    </address>
+
+    <p><a href="tel:{{ .phone }}">{{ .phone }}</a></p>
+    <p><a href="mailto:{{ .email }}">{{ .email }}</a></p>
+
+  </section>
+  {{ end }}
+
+  {{ with .Site.Params.social }}
+  <nav class="footer__social">
+    <h2>{{ .title }}</h2>
+    <ul class="social-nav nav is-vertical">
+
+      {{ range .link }}
+        <li class="nav__item"><a href="{{ .url }}" class="nav__link">{{ .name }}</a></li>
+      {{ end }}
+
+    </ul>
+  </nav>
+  {{ end }}
+
+  {{ with .Site.Params.sitemap }}
+  <nav class="footer__sitemap">
+    <h2>{{ .title }}</h2>
+    <ul class="social-nav nav is-vertical">
+
+      {{ range .link }}
+        <li class="nav__item"><a href="{{ .url }}" class="nav__link">{{ .name }}</a></li>
+      {{ end }}
+
+    </ul>
+  </nav>
+  {{ end }}
+
+  <p class="footer__credits">{{ .Site.Title }} © {{ now.Format "2006"}} <br> Réalisation: <a href="{{ .Site.Params.authorUrl }}" target="_blank" rel="noopener noreferer">{{ .Site.Params.author }}</a></p>
+</footer>
