@@ -1,12 +1,7 @@
 <article class="summary">
   <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 
-
   {{ .Summary }}
-
-  {{ if .Truncated }}
-    <a href="{{ .Permalink }}" aria-label="Lire la suite : {{ .Title }}">Lire la suite →</a>
-  {{ end }}
 
   <footer class="summary__meta">
     <time>{{ .Date.Format "02.01.2006" }}</time>
