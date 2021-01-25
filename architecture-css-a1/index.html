@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture CSS A1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="site-navigation">
+    <a href="#box-1">Box 1</a>
+    <a href="#box-2">Box 2</a>
+  </nav>
+
+  <main class="site-content">
+     <!-- Exemple de boite -->
+     <div id="card-1" class="card">
+
+      <h2 class="box--title">Je suis une boite standard</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque in id ea, tempora assumenda accusantium
+        explicabo maiores aliquid esse reprehenderit beatae eaque repellat amet commodi distinctio voluptatibus itaque
+        iusto quaerat!</p>
+
+      <a class="box--more" href="">+</a>
+    </div>
+
+    <!-- Exemple de boite -->
+    <div id="box-1" class="box">
+
+      <h2 class="box--title">Je suis une boite standard</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque in id ea, tempora assumenda accusantium
+        explicabo maiores aliquid esse reprehenderit beatae eaque repellat amet commodi distinctio voluptatibus itaque
+        iusto quaerat!</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque in id ea, tempora assumenda accusantium
+        explicabo maiores aliquid esse reprehenderit beatae eaque repellat amet commodi distinctio voluptatibus itaque
+        iusto quaerat!</p>
+
+      <a class="box--more" href="">+</a>
+    </div>
+
+    <div id="box-2" class="box box-important">
+      <h2 class="box--title">Je suis une autre boite .box-2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, fuga!</p>
+      <a class="box--more" href="">+</a>
+    </div>
+
+    <!-- Exemple de boite -->
+    <div id="box-3" class="box has-black-background-color">
+
+      <h2 class="box--title">Je suis une boite standard</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque in id ea, tempora assumenda accusantium
+        explicabo maiores aliquid esse reprehenderit beatae eaque repellat amet commodi distinctio voluptatibus itaque
+        iusto quaerat!</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque in id ea, tempora assumenda accusantium
+        explicabo maiores aliquid esse reprehenderit beatae eaque repellat amet commodi distinctio voluptatibus itaque
+        iusto quaerat!</p>
+
+      <a class="box--more" href="">+</a>
+    </div>
+  </main>
+
+  <script>
+    var selected = document.querySelector('#card-1')
+
+    selected.classList.add('has-gray-background-color')
+  </script>
+</body>
+
+</html>

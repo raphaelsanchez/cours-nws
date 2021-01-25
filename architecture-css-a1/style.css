@@ -1,0 +1,148 @@
+/**
+ * FEUILLE DE STYLE PRINCIPALE
+ * Pour une bonne consistance de notre code, nous utiliserons la convention de Codeguide.com
+ * (voir. https://codeguide.co)
+ * Nous utiliserons également une convention d'écriture inspiré du BEM
+ * (voir. http://getbem.com/introduction/)
+ * Et pour l'architecture nous nous inspirerons de ITCSS
+ * (lire: https://medium.com/@KBizien/architecture-css-avec-itcss-inuitcss-6b4271cb1042)
+ *
+ * SOMMAIRE
+ * 1. BASE
+ * 2. LAYOUT
+ * 3. COMPONENT
+ * 4. UTILITIES
+ * 5. MEDIA QUERIES
+ */
+
+/**
+ * 1. BASE
+ * Les bases représentent tout les selecteurs sans style.
+ * =================================================== */
+
+/* Redefinir par defaut le box sizing */
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4 {}
+
+a {}
+a:hover {}
+
+img {}
+
+/**
+ * 2. LAYOUT
+ * Layout du site
+ * =================================================== */
+.site-content {
+  display: grid;
+  grid-gap: 1.2em;
+}
+
+/**
+ * 3. COMPONENTS
+ * Librairie de composants réutilisable
+ * =================================================== */
+
+/**
+ * Box
+ * On utlise des boites pour encapluser des élémetns que l'on souhaite mettre en valeur
+ * exemple d'usage :
+ *  <div class="box">
+ *    <h2 class="box--title"></div>
+ *    <p> ... </p>
+ *    <a class="box--more"></a>
+ *  </div>
+ */
+.box {
+  /* Positioning */
+  position: relative;
+
+  /* Box model */
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2em;
+  width: 400px;
+
+  /* Typography */
+  font-size: 20px;
+
+  /* Visual */
+  border: 1px solid #000;
+
+  /* Misc */
+}
+
+.box-content {
+  color: green
+}
+
+.box--title {
+  font-family: serif;
+  font-size: 2em;
+}
+
+.box--more {
+  /* Positioning */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  /* Box model*/
+  padding: 10px 20px;
+
+  /* Visual*/
+  background: #000;
+  color: #fff;
+}
+
+/**
+ * Box Important
+ * boite que l'on souhaite mettre en évidence
+ * exemple d'usage :
+ *  <div class="box box-important"> ... </div>
+ */
+.box-important {
+  padding: 80px 60px;
+  border-width: 14px;
+}
+
+
+/**
+ * 4. UTILITIES
+ * Ensemble de classes utilitaires
+ * =================================================== */
+.hidden { display: none; }
+
+.has-black-background-color {
+  background-color: #000;
+  color: #fff;
+}
+.has-gray-background-color { background-color: #eee; }
+
+.text-center { text-align: center; }
+
+/**
+ * 5. MEDIA QUERIES
+ * Layout du site
+ * =================================================== */
+
+/* Pour les Tablettes et + */
+@media (min-width: 40rem) {
+  .site-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Pour les Desktop et + */
+@media (min-width: 60rem) {
+  .site-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
